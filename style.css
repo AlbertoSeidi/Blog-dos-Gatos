@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: "Mulish", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.page {
+  width: 43rem;
+  height: 100vh;
+}
+
+#logo {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header {
+  width: 100%;
+  background-color: #065e7c;
+  height: 7.2rem;
+  padding: 1.2rem 2.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2.5rem;
+}
+
+header .search label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+header .search input {
+  border-radius: 0.4rem;
+  height: 4rem;
+  max-width: 24.1rem;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.search input::placeholder {
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+main .info {
+  margin-inline: 2.2rem 2.6rem;
+}
+main img {
+  position: relative;
+  width: 43rem;
+  height: 21.9rem;
+  object-fit: cover;
+}
+
+main h1 {
+  margin-top: 3.1rem;
+  color: #202024;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+main .vote {
+  margin: 0.8rem 0 3.1rem 0;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+main .vote a {
+  width: 4rem;
+  height: 4rem;
+  background-color: #065e7c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .vote a img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+main .info p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+article {
+  margin-top: 3.4rem;
+  margin-inline: 2.2rem 2.6rem;
+  margin-bottom: 3.6rem;
+}
+
+article .cards {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+article .card {
+  width: 38.4rem;
+  height: 8.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+article .card img {
+  width: 15.1rem;
+  height: 8.4rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+article .card .description {
+  top: 0;
+  width: 21.5rem;
+  height: 8.2rem;
+  gap: 1.3rem;
+}
+
+article .card .description h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+article .card .description p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+footer {
+  height: 6.4rem;
+  background: #387e96;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (min-width: 430px) {
+  .page {
+    width: 100%;
+  }
+  header .search input {
+  }
+}

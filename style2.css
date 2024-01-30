@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-header: #065e7c;
+}
+body {
+  width: 100vw;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  height: 7.2rem;
+  padding: 2.8rem 1.2rem;
+  background: var(--color-header);
+
+  display: grid;
+  grid-template-columns: 4rem auto 4rem;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  grid-gap: 2.55rem;
+}
+
+header #avatar {
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header #logo {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #logo img {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
+}
+
+header .search label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+header input {
+  font-family: "Mulish", sans-serif;
+}
+
+header .search input {
+  min-width: 24.1rem;
+
+  height: 4rem;
+  border-radius: 0.4rem;
+  padding: 12px 16px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  color: #fff;
+}
+header .search input::placeholder {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100%;
+  color: #fff;
+}
+
+.page {
+  width: 100%;
+}
+
+#main-picture {
+  object-fit: cover;
+  width: 100%;
+  /* width: 44rem; */
+  height: 21.9rem;
+  border-radius: 0.5rem;
+  margin-bottom: 3.1rem;
+}
+main,
+section {
+  padding: 0 2.6rem 0 2.2rem;
+}
+main h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+  color: #202024;
+}
+
+main p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  padding-bottom: 3rem;
+}
+
+.vote {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2.4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 3.1rem;
+}
+
+.vote a {
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-header);
+  border-radius: 50%;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+.vote img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+section {
+  padding: 0 2.6rem 0 2.2rem;
+}
+
+section h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+  padding-bottom: 3.2rem;
+}
+
+.gallery {
+  padding: 0;
+  display: grid;
+  gap: 3.2rem;
+}
+
+.item {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.item img {
+  width: 15rem;
+  height: 8.4rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.details h2 {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.details span {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+footer {
+  margin-top: 3.9rem;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #387e96;
+}
+
+footer p {
+  padding: 1.6rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (min-width: 750px) {
+  header {
+    display: grid;
+    grid-template-columns: 4rem 75% 4rem;
+    justify-content: center;
+    align-content: center;
+  }
+  header .search input {
+    width: 100%;
+  }
+
+  .page {
+    padding: 4rem 8rem 4rem 8rem;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "content section";
+
+    gap: 3.5rem;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .content #main-picture {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    max-width: 80rem;
+    max-height: 100vh;
+  }
+
+  main {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .title {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.2rem;
+  }
+
+  main .vote {
+    padding: 0;
+    gap: 1.2rem;
+  }
+
+  #main-picture {
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  /* .info {
+    padding: 4.4rem 11.2rem 3.9rem 11.2rem;
+  } */
+
+  section {
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
